@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "jsx": "react",
+      "module": "es6",
+      "outDir": "./dist/",
+      "removeComments": true,
+      "target": "es2015",
+      "moduleResolution": "node"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+  }
