@@ -7,7 +7,6 @@ export default function TodoReducer(state = [], action) {
         }
         case 'TOGGLE_TODO': {
             return state.map(task => {
-                console.log(task.id);
                 if(task.id === action.payload.id) {
                     task.isDone = !task.isDone;
                 }

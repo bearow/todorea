@@ -7,7 +7,6 @@ export const TodoList = connect(
         return { todos: state };
     },
     function mapDispatchToProps(dispatch) {
-        console.log('huhu');
         return {
             addTodo: text => dispatch(addTodo(text)),
             toggleTodo: id => dispatch(toggleTodo(id))
