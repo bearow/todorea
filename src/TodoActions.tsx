@@ -1,10 +1,8 @@
-let id = 0;
-
 export function addTodo(text) {
     return {
         type: 'ADD_TODO',
         payload: {
-            id: id++,
+            id: Math.floor(Math.random() * 1000).toString(),
             isDone: false,
             text
         }

@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
 import TaskList from './components/TaskList';
-import TodoTask from './components/TodoTask';
 import { addTodo, toggleTodo } from './TodoActions';
 
 export const TodoList = connect(
@@ -8,6 +7,7 @@ export const TodoList = connect(
         return { todos: state };
     },
     function mapDispatchToProps(dispatch) {
+        console.log('huhu');
         return {
             addTodo: text => dispatch(addTodo(text)),
             toggleTodo: id => dispatch(toggleTodo(id))

@@ -4,6 +4,9 @@ html, body, input, button {
   }
   
   .todo {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
   }
   
   .todo__list {
@@ -30,25 +33,7 @@ html, body, input, button {
     width: 100%;
     box-sizing: border-box;
   }
-  
-  .todo__button {
-    border: 0;
-    border-radius: .2em;
-    background: #71B7FF;  
-    color: #fff;
-    padding: .25em .5em;
-    margin: .5em 0;
-    margin-right: .25em;
-    cursor: pointer;
-  }
-  
-  .todo__button:hover {
-    background: #B2D8FF;
-  }
-  
-  .ugh {
-      border: 10;
-      border-radius: 2em;
-      background: #dd2233;
-      padding: 1em, 1em;
+
+  .done {
+    text-decoration: line-through
   }
